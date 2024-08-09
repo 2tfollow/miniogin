@@ -47,7 +47,7 @@ document.getElementById("register-form").addEventListener("submit", function(eve
       "email": email
   };
 
-  fetch("https://script.google.com/macros/s/AKfycbxZ-xhpae_tVPzjFFQxG6krNdDzauNboYqqLgVgc0XMlIfpQhZHLFOqrz7l99lZLzl6/exec", {  // เปลี่ยนเป็น URL ของ Google Apps Script Web App
+  fetch("https://script.google.com/macros/s/AKfycbybxbVof6JFVK5X6lfiSQIRSBGz1ZoUMlBFq_sLBOAA7-7piW2-RRRev9S3AfDlnAbvwg/exec", {  // เปลี่ยนเป็น URL ของ Google Apps Script Web App
       method: "POST",
       body: JSON.stringify(data),
       headers: {
