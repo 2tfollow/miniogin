@@ -47,7 +47,7 @@ document.getElementById("register-form").addEventListener("submit", function(eve
       "email": email
   };
 
-  fetch("https://script.google.com/macros/s/AKfycbyimV7LPYbT1QNdcTwI5DkGP9Y0wUJ_JnbymVEBnGPJKFdnu3gfDW4dc_YAsWqlwRb8/exec", {  // เปลี่ยนเป็น URL ของ Google Apps Script Web App
+  fetch("https://script.google.com/macros/s/AKfycbxZ-xhpae_tVPzjFFQxG6krNdDzauNboYqqLgVgc0XMlIfpQhZHLFOqrz7l99lZLzl6/exec", {  // เปลี่ยนเป็น URL ของ Google Apps Script Web App
       method: "POST",
       body: JSON.stringify(data),
       headers: {
@@ -59,7 +59,8 @@ document.getElementById("register-form").addEventListener("submit", function(eve
       document.getElementById("response-message").innerText = "การลงทะเบียนสำเร็จ";
   })
   .catch(error => {
-      document.getElementById("response-message").innerText = "มีข้อผิดพลาดกับการลงทะเบียน";
-      console.error("Error:", error);
+    document.getElementById("response-message").innerText = "มีข้อผิดพลาดกับการลงทะเบียน: " + error.message;
+    console.error("Error:", error);
   });
 });
+
