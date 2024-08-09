@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINLogin - Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <img src="img/logo.png" class="logo" alt="MINLogin Logo" width="150">
+            <ul class="nav-menu">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="article.html">บทความ</a></li>
+                <li><a href="price.html">ราคา</a></li>
+                <li><a href="register.html"><button class="register">ลงทะเบียน</button></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="register">
+        <div class="register-container">
+            <h1>Register</h1>
+            <form id="register-form">
+                <label for="name">ชื่อ-นามสกุล:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">อีเมล:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit" class="cta">Submit</button>
+            </form>
+            <p id="response-message"></p>
+        </div>
+    </section>
+
+    <section class="trust">
+        <div class="trust-container">
+            <h2>Why Should I Trust MINLogin?</h2>
+            <ul class="trust-list">
+                <li><span class="trust-icon">✔️</span> Spoof over 50 parameters</li>
+                <li><span class="trust-icon">🔒</span> Advanced encryption</li>
+                <li><span class="trust-icon">👥</span> Dedicated support team</li>
+            </ul>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 MINLogin. All rights reserved.</p>            
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINLogin - Price & Plan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pricing.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="img/logo.png" class="logo" alt="MINLogin Logo" width="150">
+            <ul class="nav-menu">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="article.html">บทความ</a></li>
+                <li><a href="price.html">ราคา</a></li>
+                <li><a href="register.html"><button class="register">ลงทะเบียน</button></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Price & Plan Section -->
+    <section class="pricing">
+        <div class="pricing-header">
+            <h1>Price & Plan</h1>
+            <p>Discover Affordable Excellence with MINLogin's Pricing Plans. Elevate your efficiency, fit for every budget!</p>
+            <div class="billing-toggle">
+                <button id="month-btn" class="billing-btn active" onclick="switchBilling('month')">Billed Month</button>
+                <button id="year-btn" class="billing-btn" onclick="switchBilling('year')">Billed Year (-50%)</button>
+            </div>
+        </div>
+
+        <!-- Row 1: Free, Mini, Solo -->
+        <div class="pricing-cards">
+            <div class="pricing-card">
+                <h2>Free</h2>
+                <p>Free with all features</p>
+                <ul>
+                    <li>✔️ 5 profiles</li>
+                    <li>✔️ Synchronizer Action</li>
+                    <li>✔️ Cloud data sync</li>
+                    <li>✔️ Automation tasking</li>
+                    <li>✔️ MINApp Interface</li>
+                    <li>✔️ Automation Academy</li>
+                </ul>
+                <button class="cta">Get Started</button>
+            </div>
+            <div class="pricing-card">
+                <h2>Mini</h2>
+                <p id="mini-price">$20 / month</p>
+                <ul>
+                    <li>✔️ 30 profiles</li>
+                    <li>✔️ Synchronizer Action</li>
+                    <li>✔️ Cloud data sync</li>
+                    <li>✔️ Automation tasking</li>
+                    <li>✔️ MINApp Interface</li>
+                    <li>✔️ Automation Academy</li>
+                </ul>
+                <button class="cta">Get Started</button>
+            </div>
+            <div class="pricing-card">
+                <h2>Solo</h2>
+                <p id="solo-price">$39 / month</p>
+                <ul>
+                    <li>✔️ 100 profiles</li>
+                    <li>✔️ Synchronizer Action</li>
+                    <li>✔️ Cloud data sync</li>
+                    <li>✔️ Automation tasking</li>
+                    <li>✔️ MINApp Interface</li>
+                    <li>✔️ Automation Academy</li>
+                </ul>
+                <button class="cta">Get Started</button>
+            </div>
+        </div>
+
+        <!-- Row 2: Team, Company -->
+        <div class="pricing-cards">
+            <div class="pricing-card large-card">
+                <h2>Team</h2>
+                <p id="team-price">$91 / month</p>
+                <ul>
+                    <li>✔️ 300 profiles</li>
+                    <li>✔️ 10 members and sub-accounts</li>
+                    <li>✔️ VIP Support</li>
+                    <li>✔️ All features of Solo Plan</li>
+                </ul>
+                <button class="cta">Get Started</button>
+            </div>
+            <div class="pricing-card large-card">
+                <h2>Company</h2>
+                <p id="company-price">$189 / month</p>
+                <ul>
+                    <li>✔️ 1000 profiles</li>
+                    <li>✔️ 20 members and sub-accounts</li>
+                    <li>✔️ Priority Support</li>
+                    <li>✔️ All features of Team Plan</li>
+                </ul>
+                <button class="cta">Get Started</button>
+            </div>
+        </div>
+
+        <div class="pricing-footer">
+            <button class="cta primary">Contact Support</button>
+        </div>
+    </section>
+
+    <section class="trust">
+        <div class="trust-container">
+            <h2>Why Should I Trust MINLogin?</h2>
+            <ul class="trust-list">
+                <li><span class="trust-icon">✔️</span> Spoof over 50 parameters</li>
+                <li><span class="trust-icon">🔒</span> Advanced encryption</li>
+                <li><span class="trust-icon">👥</span> Dedicated support team</li>
+            </ul>
+        </div>
+    </section>
+    
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 MINLogin. All rights reserved.</p>            
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
